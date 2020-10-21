@@ -12,7 +12,7 @@ function App() {
           <Formulario></Formulario>
         </Route>
         <Route exact path="/forms_table">
-          <VisualizarFormulario ejemplo={[1,2,3,4,5,6,7,8]}></VisualizarFormulario>
+          <VisualizarFormulario ejemplo={[1,2,3,4,5,6]}></VisualizarFormulario>
         </Route>
       </Switch>
     </Router>
