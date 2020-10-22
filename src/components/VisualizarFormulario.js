@@ -7,13 +7,8 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 
-export default function VisualizarFormulario({ejemplo}) {
-  /*  const rows = [
-    { id: 1, name: "bruce", lastName: "wayne", sex: "Masculino", covid: "No" },
-    { id: 2, name: "barry", lastName: "allen", sex: "Masculino", covid: "No" },
-    { id: 3, name: "oliver", lastName: "queen", sex: "Masculino", covid: "Si" },
-  ];   */
-
+export default function VisualizarFormulario() {
+ 
   const [userData, setUserData] = useState([]);
 
   useEffect(() => {
@@ -27,7 +22,6 @@ export default function VisualizarFormulario({ejemplo}) {
 
   return (
     <>
-    {console.log("ejemplo", ejemplo)}
     <TableContainer component={Paper}>
       <Table aria-label="simple table">
         <TableHead>

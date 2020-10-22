@@ -9,7 +9,6 @@ import {
   makeStyles,
   MenuItem,
 } from "@material-ui/core";
-import VisualizarFormulario from "./VisualizarFormulario"
 
 export default function Formulario() {
   const [name, setName] = useState("");
@@ -124,7 +123,6 @@ export default function Formulario() {
           Enviar
         </Button>
       </form>
-      <VisualizarFormulario ejemplo={["aasd","gdfgdfg"]}></VisualizarFormulario>
     </>
   );
 }

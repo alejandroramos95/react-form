@@ -8,11 +8,11 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/form">
           <Formulario></Formulario>
         </Route>
         <Route exact path="/forms_table">
-          <VisualizarFormulario ejemplo={[1,2,3,4,5,6]}></VisualizarFormulario>
+          <VisualizarFormulario></VisualizarFormulario>
         </Route>
       </Switch>
     </Router>
