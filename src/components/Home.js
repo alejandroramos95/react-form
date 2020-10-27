@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <div style={{ height: "100%", position: "relative" }}>
-        <h1 style={{ position: "absolute", width: "100%" }}>RICARDO DARIN</h1>
+        <h1 style={{ position: "absolute", width: "100%" }}>Form Project</h1>
         <div className="CardAtt">
           <div className="CardColumn">
             <Card className="Card">

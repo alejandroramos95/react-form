@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Formulario from "./components/Formulario";
 import VisualizarFormulario from "./components/VisualizarFormulario";
 import Home from "./components/Home";
+import Menu from "./components/Menu";
 
 function App() {
-  return (
-    <div className="App">
-    <Router>
+  const routes = () => {
+    return (
       <Switch>
         <Route exact path="/">
           <Home></Home>
@@ -20,12 +20,15 @@ function App() {
           <VisualizarFormulario></VisualizarFormulario>
         </Route>
       </Switch>
-    </Router>
+    );
+  };
+
+  return (
+    <div className="App">
+      <Menu></Menu>
+      <Router>{routes()}</Router>
     </div>
   );
 }
 
 export default App;
-
-// entre <div className="App"> y router colocar el app bar+drawer
-    
